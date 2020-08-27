@@ -59,6 +59,14 @@
       &:hover
         color: $dark-gray
 
+    > .delete
+      position: absolute
+      content: "Delete Card"
+      margin-top: 1em
+      bottom: $base-spacing/2
+      line-height: 1em
+      color: tint($dark-gray, 30)
+
     .info
       +span-columns(8)
 
@@ -115,7 +123,8 @@
 
       .form-controls
         +span-columns(11)
-
+        margin-bottom: .5em
+    
     .comment
       +clearfix
       margin-bottom: $base-spacing/2
