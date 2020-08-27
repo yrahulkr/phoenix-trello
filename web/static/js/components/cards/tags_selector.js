@@ -46,8 +46,7 @@ export default class TagsSelector extends React.Component {
       const handleOnClick = (e) => {
         e.preventDefault();
 
-        return true;
-//isSelected ? this._removeTag(tag) : this._addTag(tag);
+        return isSelected ? this._removeTag(tag) : this._addTag(tag);
       };
 
       const linkClasses = classnames({
